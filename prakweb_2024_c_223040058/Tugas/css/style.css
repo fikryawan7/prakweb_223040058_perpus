@@ -1,0 +1,169 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eed1b4; /* Updated wallpaper color */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px; /* Space for fixed footer */
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.container {
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Header Styling */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin-top: 5px;
+}
+
+/* Table Styling */
+.table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table td {
+  background-color: #f1f1f1;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e2e6ea;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+/* Feature List Styling */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Gallery Styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: calc(33.333% - 10px); /* Three images per row */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffd700;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffd700;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  background-color: white;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-collapse .navbar-nav {
+  gap: 15px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      padding: 10px 0;
+  }
+
+  .gallery img {
+      width: calc(50% - 10px); /* Two images per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery img {
+      width: 100%; /* One image per row */
+  }
+}
